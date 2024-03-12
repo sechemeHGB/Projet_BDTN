@@ -1,25 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\46426155\\source\\repos\\Projet_BDTN\\Projet_BDTN\\Projet_BDTN.csproj": {}
+    "C:\\Users\\tanga\\Source\\Repos\\Projet_BDTN\\Projet_BDTN\\Projet_BDTN.csproj": {}
   },
   "projects": {
-    "C:\\Users\\46426155\\source\\repos\\Projet_BDTN\\Projet_BDTN\\Projet_BDTN.csproj": {
+    "C:\\Users\\tanga\\Source\\Repos\\Projet_BDTN\\Projet_BDTN\\Projet_BDTN.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\46426155\\source\\repos\\Projet_BDTN\\Projet_BDTN\\Projet_BDTN.csproj",
+        "projectUniqueName": "C:\\Users\\tanga\\Source\\Repos\\Projet_BDTN\\Projet_BDTN\\Projet_BDTN.csproj",
         "projectName": "Projet_BDTN",
-        "projectPath": "C:\\Users\\46426155\\source\\repos\\Projet_BDTN\\Projet_BDTN\\Projet_BDTN.csproj",
-        "packagesPath": "C:\\Users\\46426155\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\46426155\\source\\repos\\Projet_BDTN\\Projet_BDTN\\obj\\",
+        "projectPath": "C:\\Users\\tanga\\Source\\Repos\\Projet_BDTN\\Projet_BDTN\\Projet_BDTN.csproj",
+        "packagesPath": "C:\\Users\\tanga\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tanga\\Source\\Repos\\Projet_BDTN\\Projet_BDTN\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\46426155\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\tanga\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -39,12 +34,35 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.16, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -56,7 +74,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -68,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.321\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }

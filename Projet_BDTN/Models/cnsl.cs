@@ -1,6 +1,6 @@
 ﻿namespace Projet_BDTN.Models
 {
-    public class Console
+    public class cnsl
     {
         public int Id { get; set; }
         public ICollection<Vente> Ventes { get; set; }

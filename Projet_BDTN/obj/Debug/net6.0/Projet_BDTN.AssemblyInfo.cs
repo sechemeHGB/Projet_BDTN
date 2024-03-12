@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Projet_BDTN")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb665c15d711c1f318fdddc8008e31568af87dab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Projet_BDTN")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Projet_BDTN")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
