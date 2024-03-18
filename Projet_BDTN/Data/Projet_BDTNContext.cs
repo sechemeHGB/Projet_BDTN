@@ -14,7 +14,7 @@ namespace Projet_BDTN.Data
         {
         }
 
-        public DbSet<Projet_BDTN.Models.cnsl> Console { get; set; } = default!;
+        public DbSet<Projet_BDTN.Models.cnsl>? Cnsl { get; set; }
 
         public DbSet<Projet_BDTN.Models.Vente>? Vente { get; set; }
     }
