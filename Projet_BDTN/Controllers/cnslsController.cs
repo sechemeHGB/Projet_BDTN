@@ -23,24 +23,24 @@ namespace Projet_BDTN.Controllers
 
         // GET: api/cnsls
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<cnsl>>> GetConsole()
+        public async Task<ActionResult<IEnumerable<cnsl>>> GetCnsl()
         {
-          if (_context.Console == null)
+          if (_context.Cnsl == null)
           {
               return NotFound();
           }
-            return await _context.Console.ToListAsync();
+            return await _context.Cnsl.ToListAsync();
         }
 
         // GET: api/cnsls/5
         [HttpGet("{id}")]
         public async Task<ActionResult<cnsl>> Getcnsl(int id)
         {
-          if (_context.Console == null)
+          if (_context.Cnsl == null)
           {
               return NotFound();
           }
-            var cnsl = await _context.Console.FindAsync(id);
+            var cnsl = await _context.Cnsl.FindAsync(id);
 
             if (cnsl == null)
             {
@@ -86,11 +86,11 @@ namespace Projet_BDTN.Controllers
         [HttpPost]
         public async Task<ActionResult<cnsl>> Postcnsl(cnsl cnsl)
         {
-          if (_context.Console == null)
+          if (_context.Cnsl == null)
           {
-              return Problem("Entity set 'Projet_BDTNContext.Console'  is null.");
+              return Problem("Entity set 'Projet_BDTNContext.Cnsl'  is null.");
           }
-            _context.Console.Add(cnsl);
+            _context.Cnsl.Add(cnsl);
             await _context.SaveChangesAsync();
 
             return CreatedAtAction("Getcnsl", new { id = cnsl.Id }, cnsl);
@@ -100,17 +100,17 @@ namespace Projet_BDTN.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Deletecnsl(int id)
         {
-            if (_context.Console == null)
+            if (_context.Cnsl == null)
             {
                 return NotFound();
             }
-            var cnsl = await _context.Console.FindAsync(id);
+            var cnsl = await _context.Cnsl.FindAsync(id);
             if (cnsl == null)
             {
                 return NotFound();
             }
 
-            _context.Console.Remove(cnsl);
+            _context.Cnsl.Remove(cnsl);
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -118,7 +118,7 @@ namespace Projet_BDTN.Controllers
 
         private bool cnslExists(int id)
         {
-            return (_context.Console?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Cnsl?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
