@@ -10356,11 +10356,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\46425951\\Source\\Repos\\Projet_BDTN\\Client_BDTN\\Client_BDTN.csproj",
+      "projectUniqueName": "C:\\Users\\46425951\\source\\repos\\Projet_BDTN\\Client_BDTN\\Client_BDTN.csproj",
       "projectName": "Client_BDTN",
-      "projectPath": "C:\\Users\\46425951\\Source\\Repos\\Projet_BDTN\\Client_BDTN\\Client_BDTN.csproj",
+      "projectPath": "C:\\Users\\46425951\\source\\repos\\Projet_BDTN\\Client_BDTN\\Client_BDTN.csproj",
       "packagesPath": "C:\\Users\\46425951\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\46425951\\Source\\Repos\\Projet_BDTN\\Client_BDTN\\obj\\",
+      "outputPath": "C:\\Users\\46425951\\source\\repos\\Projet_BDTN\\Client_BDTN\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

@@ -5,6 +5,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages().AddNewtonsoftJson();
 builder.Services.AddHttpClient<IVenteClient, VenteClient>(client =>
             client.BaseAddress = new Uri(builder.Configuration.GetSection("VenteApi").Value));
+
+
 builder.Services.AddRazorPages();
 
 var app = builder.Build();

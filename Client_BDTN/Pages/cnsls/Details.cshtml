@@ -1,0 +1,31 @@
+﻿@page
+@model Client_BDTN.Pages.cnsls.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>cnsl</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.cnsl.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.cnsl.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.cnsl.Constructors)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.cnsl.Constructors)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.cnsl?.Id">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>
